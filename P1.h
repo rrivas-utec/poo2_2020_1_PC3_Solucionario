@@ -18,7 +18,7 @@ auto sort_numbers(Args... values) {
 
     // create heap and result container
 	heap_t<common_t, Compare> h;
-    ContainerT<common_t> result(sizeof...(Args)); // To avoid doing a lot of push_backs
+    	ContainerT<common_t> result(sizeof...(Args)); // To avoid doing a lot of push_backs
 
     // add values
 	(h.push(values), ...);  // Explore the possibility
